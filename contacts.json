@@ -1,0 +1,49 @@
+{
+    "contacts": [
+      {
+        "id": 1,
+        "avatar_url": "path/to/john-doe-avatar.jpg",
+        "first_name": "John",
+        "last_name": "Doe",
+        "company": "Company A",
+        "details": "John is a software engineer with over 10 years of experience in full-stack development.",
+        "email": "john.doe@example.com",
+        "phone": {
+          "area_code": "123",
+          "number": "456-7890"
+        },
+        "addresses": [
+          {
+            "line_1": "123 Main St",
+            "line_2": "Apt 4B",
+            "zip_code": "10001",
+            "city_id": 1,
+            "state_id": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "avatar_url": "path/to/jane-smith-avatar.jpg",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "company": "Company B",
+        "details": "Jane is a project manager with expertise in Agile methodologies.",
+        "email": "jane.smith@example.com",
+        "phone": {
+          "area_code": "456",
+          "number": "789-0123"
+        },
+        "addresses": [
+          {
+            "line_1": "456 Oak St",
+            "line_2": "",
+            "zip_code": "90001",
+            "city_id": 2,
+            "state_id": 2
+          }
+        ]
+      }
+    ]
+  }
+  

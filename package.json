@@ -25,7 +25,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:mock-books": "json-server --watch books.json --port 3001",
-    "start:mock-users": "json-server --watch users.json --port 3002"
+    "start:mock-users": "json-server --watch users.json --port 3002",
+    "start:mock-contacts": "json-server --watch contacts.json --port 3003",
+    "start:mock-cities": "json-server --watch cities.json --port 3004",
+    "start:mock-states": "json-server --watch states.json --port 3005"
   },
   "eslintConfig": {
     "extends": [

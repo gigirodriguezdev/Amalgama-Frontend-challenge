@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './store/store'; 
+import store from './store/store';
 import { Ejercicio1 } from './Ejercicio1';
 import { Ejercicio2 } from './Ejercicio2';
 import { Ejercicio3 } from './Ejercicio3';
+import { ContactProfile } from './components/ContactProfile';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/ejercicio2" element={<Ejercicio2 />} />
             <Route path="/ejercicio3" element={<Ejercicio3 />} />
             <Route path="*" element={<Navigate to="/ejercicio3" />} />
+            <Route path="/contact/:id" element={<ContactProfile />} />
           </Routes>
         </div>
       </Router>
