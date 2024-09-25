@@ -59,7 +59,7 @@ Se aprovecho la implementacion de la libreria Redux, para guardar en el store la
 Se definio una pantalla PrivateScreen que contiene la logica para validar el token de autenticacion.
 
 
-Aclaracion: no tuve tiempo de darle estilos a la solucion, optaria por utilizar tailwind para los estilos de los distintos componentes, ya que son ejercicios sueltos y me permite crear una solucion responsive de manera mas rapida que creando los estilos con CSS de desde cero.
+Aclaracion: no tuve tiempo de darle estilos (como me hubiese gustado) a la solucion. Implemente tailwind para darle de manera rapida algunos estilos a los distintos componentes.
 Tambien podria usar styled components, definiendo estilos globales.
 
 * La implementacion de React Router me facilito mostrar los 3 ejercicios dentro de un mismo proyecto, permitiendome gestionar la navegación, mantener el código organizado y mejorar la experiencia del usuario.
