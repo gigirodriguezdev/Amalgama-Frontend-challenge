@@ -13,13 +13,14 @@ En la pantalla inicial se encuentran los links a los tres ejercicios
 El codigo no esta indentado, lo cual hace dificil su lectura.
 El codigo no compila ya que existen errores de sintaxis y funciones que no estan definidas: truncate() y findById()
 El componente es muy grande y posee mucha logica, se podria separar en componentes mas pequeños, lo que facilitaria su mantenimiento y escalabilidad.
-El componente no posee manejo de errores, si alguna de las propiedades no existe, el componente fallara.
+El componente no posee manejo de errores, si alguna de las propiedades no existe, el componente falla.
 El problema principal es que el componente ContactsScreen no estaba siendo reactivo a los cambios, es decir que cuando el componente se montaba, estaba definiendo en la variable contactsToDisplay los valores iniciales de contacts. Si estos cambian en el componente padre que le pasa las props a ContactsScreen, estos nuevos contacs no se veran reflejados en dicho componente.
 
 Para solucionar esto ultimo, se opto por utilizar el hook useMemo para que la funcion parseContacts solo se ejecute cuando contacts cambie.
 
-2. La refactorizacion del codigo se pueden encontrar los distintos componentes utilizados dentro del archivo Ejercicio1.js
-A fines practicos y para una correccion mas simple opte por definir los distintos componentes y funciones dentro del mismo archivo. La forma mas prolija es crear cada componente en un archivo distinto.
+2. La refactorizacion del codigo se puede encontrar dentro del archivo Ejercicio1.js, en el cual se llaman a los distintos componentes que contienen la logica separada: ContactCard, ContactProfile, y Address. 
+Se mockearon 3 archivos JSON que contienen informacion de contacts, cities, y states. Adicionalmente, se implemento aprovecho la implementacion de Redux en los ejercicios 2 y 3 para guardar en el store esta informacion.
+
 
 3. 
 Se agrego un manejo de errores cuando se llama a la funcion findById: Ahora se retorna "Unknown City" o "Unknown State" en caso de que no se encuentre la ciudad o el estado, evitando posibles errores. Se hardcodeo el retorno del string "Argentina" para fines practicos.
