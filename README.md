@@ -20,14 +20,17 @@ Para solucionar esto ultimo, se opto por utilizar el hook useMemo para que la fu
 
 2. La refactorizacion del codigo se puede encontrar dentro del archivo Ejercicio1.js, en el cual se llaman a los distintos componentes que contienen la logica separada: ContactCard, ContactProfile, y Address. 
 Se mockearon 3 archivos JSON que contienen informacion de contacts, cities, y states. Adicionalmente, se implemento aprovecho la implementacion de Redux en los ejercicios 2 y 3 para guardar en el store esta informacion.
+Para tener las distintas APIs mockeadas, correr los siguientes comandos en terminales distintas:
+### `npm run start:mock-contacts `
+### `npm run start:mock-cities `
+### `npm run start:mock-states `
 
-
-3. 
+4. 
 Se agrego un manejo de errores cuando se llama a la funcion findById: Ahora se retorna "Unknown City" o "Unknown State" en caso de que no se encuentre la ciudad o el estado, evitando posibles errores. Se hardcodeo el retorno del string "Argentina" para fines practicos.
 El componente ContactScreen va a llanar a los componentes ContactCard y ContactProfile (este ultimo pedido en el punto 4)
 El componente ContactCard va a recibir los contactos (contacts), y dentro del mismo llama a un componente Address.
 
-4. Se agrego la correspondiente vista de perfil de contacto, para lo cual se definio el componente ContactProfile, el cual recibe las propiedades contacts, cities y states del componente padre ContactScreen
+5. Se agrego la correspondiente vista de perfil de contacto, para lo cual se definio el componente ContactProfile, el cual recibe las propiedades contacts, cities y states del componente padre ContactScreen
 
 
 ## Ejercicio 2
